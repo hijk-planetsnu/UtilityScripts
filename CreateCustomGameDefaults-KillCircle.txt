@@ -1,0 +1,105 @@
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# Training Game Setup . . . . . . . .
+# http: //help.planets.nu/API-createcustomgame
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+averagedensitypercent: 55
+campaignmode: false
+centerextraplanets: 0
+centerextraships: 0
+cloakandintercept: true
+cloningenabled: true
+closeplanets: 12
+combatrng: 0
+computerbuilddelay: 0
+computerbuildships: true
+crystalwebimmunity: 0
+deadradius: 81
+debrisdiskpercent: 50
+debrisdiskversion: 2
+DirectTransferAmmo: true
+DirectTransferMC: true
+disallowedraces: 12
+duraniumlevel: 1.6
+emorkslegacy: false
+endturn: 100
+fascistdoublebeams: true
+faststart: 15
+fcodesbdx: true
+fcodesextraalchemy: false
+fcodesmustmatchgsx: false
+fightorfail: 0
+fofincrement: 4
+homeclans: 25000
+homestarbase: true
+homeresources: 3
+hostdays: SMTWTFS
+hostime: 20:00
+homeworldlocations: 4
+hwdistribution: 4
+isprivate: true 
+killrace: false
+mapheight: 1550
+mapwidth: 1550
+mapshape: 2
+maxadvantage: 500
+maxallies: 4
+maxioncloudsperstorm: 10
+maxionstorms: 4
+maxplayersperrace: 1
+maxrank: 6
+maxsafepassage: 4
+maxshareintel: 4
+maxwormholes: 0
+mineraldensity: 2
+minrank: 1
+mintenacity: 80
+militaryscorepercent: 75
+molybdenumlevel: 1.3
+nativeclansmax: 75000
+nativeclansmin: 1000
+nativegovernmentlevel: 2
+nativeprobability: 70
+ndebrisdiscs: 0
+neutroniumlevel: 2.0
+nuionstorms: true
+numdebris: 0
+numnebulas: 0
+numplanets: 250
+numplayers: 5    
+numstars: 0
+otherplanetsdist: 155
+password: 
+planetscanrange: 10000
+plsextraships: 0
+plsminships: 0
+plsshipsperplanet: 1.0
+productioncost: 1
+productionqueue: true
+productionvalue: 1
+productionreward: 2
+shiplimit: 300
+shiplimittype: 0
+shipscanrange: 300
+shuffleteampositions: false
+sphere: false
+starbasefightertransfer: true
+stealth: false
+structuredecayrate: 3
+superspyadvanced: true
+teamsize: 2
+tritaniumlevel: 1.8
+verycloseplanets: 3
+#version: 2
+wanderingtribescount: 0
+wanderingtribesdist: 0
+wincondition: 2
+wormholemix: 80
+wormholescanrange: 100
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+

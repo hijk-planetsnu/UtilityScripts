@@ -1,0 +1,102 @@
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# Training Game Setup . . . . . . . .
+# http: //help.planets.nu/API-createcustomgame
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+averagedensitypercent: 55
+campaignmode: false
+centerextraplanets: 0
+centerextraships: 0
+cloakandintercept: true
+cloningenabled: true
+closeplanets: 12
+combatrng: 0
+computerbuilddelay: 0
+computerbuildships: true
+crystalwebimmunity: 0
+DirectTransferAmmo: true
+DirectTransferMC: true
+debrisdiskpercent: 50
+debrisdiskversion: 2
+duraniumlevel: 1.39
+emorkslegacy: false
+endturn: 200
+fascistdoublebeams: true
+faststart: 15
+fcodesbdx: false
+fcodesextraalchemy: false
+fcodesmustmatchgsx: false
+fightorfail: 0
+fofincrement: 3
+homeclans: 25000
+homestarbase: true
+homeresources: 3
+hostdays: SMTWTFS
+hostime: 20:00
+homeworldlocations: 2
+hwdistribution: 2
+isprivate: true 
+killrace: false
+mapheight: 2150
+mapshape: 2
+mapwidth: 2150
+maxadvantage: 500
+maxallies: 1
+maxioncloudsperstorm: 10
+maxionstorms: 4
+maxplayersperrace: 1
+maxrank: 6
+maxsafepassage: 3
+maxshareintel: 3
+maxwormholes: 10
+mineraldensity: 2
+minrank: 1
+mintenacity: 80
+molybdenumlevel: 1.2
+nativeclansmax: 75000
+nativeclansmin: 1000
+nativegovernmentlevel: 2
+nativeprobability: 60
+ndebrisdiscs: 0
+neutroniumlevel: 1.99
+nuionstorms: true
+numdebris: 0
+numnebulas: 0
+numplanets: 500
+numplayers: 11
+numstars: 0
+otherplanetsdist: 155
+password: 
+planetscanrange: 10000
+plsextraships: 0
+plsminships: 0
+plsshipsperplanet: 1.0
+productioncost: 1
+productionqueue: true
+productionvalue: 1
+productionreward: 2
+shiplimit: 500
+shiplimittype: 0
+shipscanrange: 300
+shuffleteampositions: false
+sphere: false
+starbasefightertransfer: true
+stealth: false
+structuredecayrate: 3
+superspyadvanced: true
+teamsize: 0
+tritaniumlevel: 1.81
+verycloseplanets: 3
+version: 2
+wanderingtribescount: 0
+wanderingtribesdist: 0
+wincondition: 1
+wormholemix: 80
+wormholescanrange: 100
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
