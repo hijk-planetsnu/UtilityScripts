@@ -34,7 +34,7 @@ Python 2.7
 Use urllib2 modules for handling the http requests and returns.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-hijk/2015
+hijk/2015/2019
 
 '''
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -51,15 +51,15 @@ import json, urllib, urllib2, gzip, StringIO
 #       your account password needs to be entered as variable "playerPASS".
 #
 planetNU    = 'http://api.planets.nu/'
-playerNAME  = 'xxxxx'              # < planet nu username
-playerKEY   = 'yyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy'               # < unknown default value should be "xxx"
-playerPASS  = 'zzzzzzz'               # < only needed if playerKEY is unknown
+playerNAME  = 'zzzz'              # < planet nu username
+playerKEY   = 'xxxxx-xxxxx-xxxx-xxxx-xxxxxxxxx'  # < unknown default value should be "xxx"
+playerPASS  = 'yyy'               # < only needed if playerKEY is unknown
 gameData    = '001-GameData/'     # < folder name in cwd where all game data is stored; end with "/"
 quickLook   = 0                   # < flag to display game List info and halt execution: 1 == yes display and exit; 0 == no download
 gameRUN     = 1                   # < 0 == finished games that are publicly accessible (status=3 type=2); else 1 == current in-progress
 gameStatus  = 2                   # game status 1 = joining; game status 2 = running; 3 = complete ()
-gameScope   = 1                   # 0 = public; 1 = custom or private
-gameTrain   = 1                   # 0 = no; 1 = yes, search training games
+gameScope   = 0                   # 0 = public; 1 = custom or private
+gameTrain   = 0                   # 0 = no; 1 = yes, search training games
 
 # Game Category Filters. Can use multiple CSV entries . . . type=1,2,3 . . . 
 # Status: 1 - Joining, 2 - Running, 3 - Finished, 4 - Hold;           Default: "1,2"
