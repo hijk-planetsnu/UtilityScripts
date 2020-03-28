@@ -1,0 +1,117 @@
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# Training Game Setup . . . . . . . .
+# http: //help.planets.nu/API-createcustomgame
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+# -- -- -- -- -- --- ---- - - - -- - -- - - ------ -- --- --
+averagedensitypercent: 55
+buildqueueplanetid: 0
+campaignmode: false
+centerextraplanets: 0
+centerextraships: 0
+cloakandintercept: true
+cloningenabled: true
+closeplanets: 12
+combatrng: 1
+computerbuilddelay: 0
+computerbuildships: true
+crystalwebimmunity: 0
+directtransfermc: true
+deadradius: 81
+ndebrisdiscs: 0
+numdebris: 4
+debrisdiskpercent: 20
+debrisdiskversion: 2
+disallowedraces: 12
+directtransferammo: true
+directtransfermc: true
+duraniumlevel: 1.5
+emorkslegacy: false
+endturn: 200
+fascistdoublebeams: true
+faststart: 15
+fcodesbdx: true
+fcodesextraalchemy: false
+fcodesmustmatchgsx: false
+fightorfail: 0
+fofincrement: 3
+galacticpower: true
+highidfixfightertransferoffset: 0
+highidfixchunnelusepodhullid: false
+homeclans: 25000
+homestarbase: true
+homeresources: 3
+hostdays: SMTWTFS
+hostime: 20:00
+homeworldlocations: 2
+hwdistribution: 2
+isprivate: true 
+killrace: false
+mapheight: 2200
+mapshape: 2
+mapwidth: 2200
+maxadvantage: 500
+maxallies: 1
+maxioncloudsperstorm: 10
+maxionstorms: 4
+maxplayersperrace: 1
+maxrank: 8
+maxsafepassage: 3
+maxshareintel: 3
+maxwormholes: 6
+mineraldensity: 2
+minrank: 1
+mintenacity: 80
+molybdenumlevel: 1.3
+nativeclansmax: 75000
+nativeclansmin: 1000
+nativegovernmentlevel: 2
+nativeprobability: 60
+ndebrisdiscs: 0
+neutroniumlevel: 1.99
+nuionstorms: true
+numdebris: 0
+numnebulas: 0
+numplanets: 500
+numplayers: 11
+numstars: 0
+otherplanetsdist: 155
+password:
+planetaryproductionqueue: true
+planetscanrange: 10000
+plsextraships: 0
+plsminships: 20
+plsshipsperplanet: 1.0
+ppqminbuilds: 10
+productionbasecost: 1
+productioncost: 1
+productionqueue: true
+productionvalue: 1
+productionstarbaseoutput: 2
+productionstarbasereward: 2
+productionreward: 2
+quantumtorpedos: true
+shiplimit: 500
+shiplimittype: 0
+shipscanrange: 300
+shuffleteampositions: false
+sphere: false
+starbasefightertransfer: true
+stealth: false
+structuredecayrate: 3
+superspyadvanced: true
+teamsize: 0
+tritaniumlevel: 1.81
+verycloseplanets: 3
+version: 2
+wanderingtribescount: 0
+wanderingtribesdist: 0
+wincondition: 1
+wormholemix: 80
+wormholescanrange: 100
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+

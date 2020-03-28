@@ -15,24 +15,24 @@ import datetime
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Runtime Variables . . . . . . . . . . 
 # Define the Human Player race . . . .
-gameName="BIRD-044"
-gameDescrip="Training Exercise"
+gameName="COM-043"
+gameDescrip="Training Exercise - Small Circle"
 
 # Define Player RACES . . . .
 # 1 = Federation; 2 = Lizards; 3 = Birds; 4 = Fascists; 5 = Privateers; 6 = Cyborg; 7 = Crystals; 8 = Empire; 9 = Robots; 10 = Rebels; 11 = Colonies; 12 = Horwasp.
-hrace    = 3                 # human player race
-craces   = [ 1, 2, 11]       # computer players
+hrace    = 11                # human player race
+craces   = [ 1, 10, 3]       # computer players
 numCRs   = len(craces)
-mapunits = 200 + 250*(numCRs+1)
-planetN  = 20  +  40*(numCRs+1)
+mapunits = 200 + 200*(numCRs+1)
+planetN  = 10  + 30*(numCRs+1)
 PLSqueue = "y"   #  "y/n", else PBP points
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Fixed Variables . . . . . . . . . . . . . 
 planetNU    = 'http://api.planets.nu/'
 createGame  = 'account/createcustomgame?'
-playerNAME  = 'xxxxxxx'                                    # < planet nu username
-playerKEY   = 'yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy'    # < unknown default value should be "xxx"  
-paramFile   = "CreateCustomGameDefaults-v3-PLS.txt"
+playerNAME  = '_____________'    # < planet nu username
+playerKEY   = 'xxx'              # < need to use the 01 utility script to find your api-key.
+paramFile   = "CreateCustomGameDefaults-v4-PPQ.txt"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -65,16 +65,6 @@ for i in range(len(craces)):
     P.append({})
     P[i+1]['id'] = '%d' % (i+2)
     P[i+1]['raceid'] = '%d' % (100+craces[i])
-
-# for p in P:        
-#     playerDefs.append(urllib.urlencode({ k: json.dumps(v) for k,v in p.iteritems() }))
-#     #playerDefs.append({ k: json.dumps(v) for k,v in p.iteritems() })
-# print("    Player ID String as List of Dictionaries:")
-# print(P)
-print("     Done.")
-#players=%5B%7B%27id%27%3A+1%2C+%27raceid%27%3A+101%7D%2C+%7B%27id%27%3A+2%2C+%27raceid%27%3A+102%7D%2C
-#players=[   {  ' id '  :  1 ,   ' raceid '  :  101 }  ,   {  ' id '  :  2 ,   ' raceid '  :  102 }  ,
-#players=[{'id': 1, 'raceid': 101}, {'id': 2, 'raceid': 102}, . . .
 
 # # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # 2. Load the game parameter string . . . . . . . .
@@ -115,9 +105,6 @@ print("There were %s game settings loaded." % (count-1))
 print("-- - - -- --- - - - -- -- - --- --- - - - - - -- --")
 gameSettings = urllib.urlencode({'settings': S})
 gameSettings = re.sub(r'%27','%22',gameSettings)   # deletes all single-quotes
-#gameSettings = re.sub(r'%3A+','%3A',gameSettings)    # deletes all spaces
-#gameSettings = re.sub(r'%2C','%3B',gameSettings)   # convert , to ;
-#gameSettings = re.sub(r'%22','',gameSettings)   # delete "
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # 3. Form the http request string . . . . . .
@@ -131,7 +118,10 @@ try:
     decompressedPage = gzip.GzipFile(fileobj=compressedPage)
     #with open("createLog.txt", 'w') as OUT:
     #    OUT.write(decompressedPage.read())
-    print("\n>>>------------------\nGame Created:\n%s\n>>>---------------------\n\n" % decompressedPage.read())
+    response = decompressedPage.read()
+    responseitems = response.split(",")
+    outprint = re.sub('{', '', responseitems[0])
+    print("\n>>>------------------\nGame Creation Request Status: \n                              %s\n>>>---------------------\n\n" % outprint)
     with open("z-log-CreateCustomGame.txt",'a') as LOG:
         LOG.write("%s\t%s\t%s\n" % (datetime.date.today(), gameName, hrace))
 except IOError:
@@ -142,74 +132,6 @@ print "\n\n* * * * * * *  D O N E  * * * * * * * *\n\n"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# wincondition=1
-# minrank=1
-# maxrank=6
-# mintenacity=80
-# hostdays=_M_W__S
-# hostime=20:00
-# faststart=15
-# campaignmode=false
-# maxadvantage=500
-# fascistdoublebeams=true
-# superspyadvanced=true	
-# starbasefightertransfer=true	
-# cloakandintercept=true 	
-# productionqueue=true 	
-# productioncost=1
-# productionvalue=2
-# productionreward=2
-# killrace=true	
-# fightorfail=0
-# fofincrement=3
-# stealth=false 	
-# combatrng=0
-# fcodesmustmatchgsx=true 	
-# fcodesextraalchemy=true
-# fcodesbdx=true
-# isprivate=true 	
-# password=""
-# numplayers=11
-# maxallies=1
-# maxshareintel=3
-# maxsafepassage=3
-# maxplayersperrace=1
-# mapshape=0
-# mapwidth=2150
-# mapheight=2150
-# sphere=false
-# homeworldlocations=2
-# verycloseplanets=3
-# closeplanets=12
-# otherplanetsdist=155
-# homestarbase=true
-# homeresources=3
-# homeclans=25000
-# extraplanets=0
-# extraships=0
-# shiplimit=500
-# planetscanrange=10000
-# shipscanrange=300
-# numplanets=500
-# numstars=2
-# numnebulas=2
-# numdebris=2
-# maxionstorms=4
-# nuionstorms=true 	
-# maxwormholes=10
-# wormholemix=80
-# wormholescanrange=100
-# mineraldensity=2
-# nativeprobability=60
-# nativegovernmentlevel=2
-# nativeclansmin=1000
-# nativeclansmax=75000
-# centerextraplanets=1
-# centerextraships=1
-# teams=0
-# shuffleteampositions=false
-# disallowedraces="12"
-# crystalwebimmunity=0
-# emorkslegacy=false
+
 
 
